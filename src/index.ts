@@ -47,10 +47,12 @@ export interface ReactionController extends CommentController {
 export interface SavedController {
   load(req: Request, res: Response): void;
   save(req: Request, res: Response): void;
+  remove(req: Request, res: Response): void;
 }
 export interface FollowController {
   follow(req: Request, res: Response): void;
   unfollow(req: Request, res: Response): void;
+  checkFollow(req: Request, res: Response): void;
 }
 export interface AppreciationController {
   admire(req: Request, res: Response): void;
