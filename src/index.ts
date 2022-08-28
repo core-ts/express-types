@@ -54,6 +54,11 @@ export interface FollowController {
   unfollow(req: Request, res: Response): void;
   checkFollow(req: Request, res: Response): void;
 }
+export interface UserReactionController {
+  react(req: Request, res: Response): void;
+  unreact(req: Request, res: Response): void;
+  checkReaction(req: Request, res: Response): void;
+}
 export interface AppreciationController {
   admire(req: Request, res: Response): void;
   respect(req: Request, res: Response): void;
